@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  generateBuildId: async () => {
+    return `${Date.now()}`; // or use git commit hash
+  },
   reactStrictMode: true,
   images: {
     loader: "default",
