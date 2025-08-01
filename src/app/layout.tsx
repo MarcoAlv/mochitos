@@ -34,11 +34,17 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${inter.variable} ${funnelSans.variable} ${nunito.variable} antialiased h-full font-inter`}
+        className={`
+          ${roboto.variable} ${inter.variable} ${funnelSans.variable} ${nunito.variable}
+          antialiased h-full font-inter min-h-screen flex flex-col
+        dark:bg-navy-blue-850 dark:text-white
+        `}
       >
         <Header />
-        <main className={topPadding ? 'pt-16' : ''}>{children}</main>
-        <Footer/>
+        <main className={`flex-1 ${topPadding ? "pt-16" : ""}`}>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

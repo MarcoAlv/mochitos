@@ -18,9 +18,9 @@ export function useTheme() {
 
   const toggleTheme = () => {
     const next = theme === 'dark' ? 'light' : 'dark'
-    setTheme(next)
-    localStorage.setItem('theme', next)
     document.documentElement.classList.toggle('dark', next === 'dark')
+    localStorage.setItem('theme', next)
+    setTheme(next)
   }
 
   return {theme, toggleTheme}

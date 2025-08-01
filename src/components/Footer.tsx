@@ -40,25 +40,25 @@ const Footer = () => {
       name: "YouTube",
       href: "#youtube",
       icon: YouTubeIcon,
-      color: "text-red-500 hover:text-red-600",
+      color: "text-moch-500 hover:text-moch-600 dark:text-navy-blue-200 dark:hover:text-navy-blue-100",
     },
     {
       name: "Instagram",
       href: "#instagram",
       icon: InstagramIcon,
-      color: "text-pink-500 hover:text-pink-600",
+      color: "text-moch-500 hover:text-moch-600 dark:text-navy-blue-200 dark:hover:text-navy-blue-100",
     },
     {
       name: "TikTok",
       href: "#tiktok",
       icon: TikTokIcon,
       color:
-        "text-gray-800 hover:text-black dark:text-navy-blue-200 dark:hover:text-navy-blue-100",
+        "text-moch-500 hover:text-moch-600 dark:text-navy-blue-200 dark:hover:text-navy-blue-100",
     },
   ];
 
   return (
-    <footer className="bg-white dark:bg-navy-blue-900 border-t border-gray-200 dark:border-navy-blue-700 transition-colors duration-200">
+    <footer className="bg-white dark:bg-navy-blue-900 border-t border-gray-200 dark:border-navy-blue-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="block md:hidden px-4">
           <div className="flex justify-start xs:justify-center mb-8">
