@@ -14,14 +14,14 @@ const Header = () => {
           
           <div className="flex items-center space-x-3">
             <Image
-              src={`${PROJECT_URL}/assets/img_icon.png`}
+              src={`/assets/img_icon.png`}
               width={150}
               height={150}
               alt='Mochitos'
               className='h-13 w-auto object-contain'
             />
             <Image
-              src={`${PROJECT_URL}/assets/text_icon.png`}
+              src={`/assets/text_icon.png`}
               width={150}
               height={150}
               alt='Mochitos'
