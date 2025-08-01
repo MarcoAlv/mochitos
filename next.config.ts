@@ -1,8 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
-  generateBuildId: async () => `${Date.now()}`,
   reactStrictMode: true,
   images: {
     loader: 'default',
