@@ -7,7 +7,7 @@ export default function ThemeToggleButton() {
   return (
     <button
       onClick={toggleTheme}
-      className="group flex items-center gap-2 px-4 py-2.5 rounded-md text-sm font-medium transition-all duration-300 ease-in-out
+      className="group flex items-center gap-2 px-3 py-2.5 rounded-md text-sm font-medium transition-all duration-300 ease-in-out
         bg-white dark:bg-navy-blue-900
         text-navy-blue-900 dark:text-navy-blue-100
         hover:bg-navy-blue-200 dark:hover:bg-navy-blue-700
