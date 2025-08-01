@@ -1,8 +1,5 @@
 import type { NextConfig } from "next";
 
-const remoteHost =
-  process.env.NEXT_PUBLIC_BASE_URL?.replace(/^https?:\/\//, '') || 'proto.sunnyserver.uk';
-
 const nextConfig: NextConfig = {
   output: 'standalone',
   generateBuildId: async () => `${Date.now()}`,
@@ -12,7 +9,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: remoteHost,
+        hostname: 'proto.sunnyserver.uk',
         pathname: '/assets/**',
       },
     ],
