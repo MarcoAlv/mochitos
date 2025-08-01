@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     loader: "default",
-    domains: ["prot.sunnyserver.uk"],
+    domains: [`${process.env.NEXT_PUBLIC_BASE_URL}`, 'proto.sunnyserver.uk'],
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 86400,
     dangerouslyAllowSVG: true,

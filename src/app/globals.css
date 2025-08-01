@@ -9,6 +9,9 @@
   --font-inter: var(--font-inter-sans);
   --font-nunito: var(--font-nunito-base);
   --font-funnel: var(--font-funnel-sans);
+
+  --breakpoint-xs: 25rem;
+
   --color-moch-50:  hsl(349, 100%, 96%);
   --color-moch-100: hsl(349, 100%, 91%);
   --color-moch-200: hsl(349, 100%, 84%);
@@ -20,5 +23,17 @@
   --color-moch-800: hsl(349, 100%, 44%);
   --color-moch-900: hsl(349, 100%, 36%);
   --color-moch-950: hsl(349, 100%, 28%);
+
+  --color-navy-blue-50:  hsl(210, 40%, 98%);
+  --color-navy-blue-100: hsl(210, 35%, 92%);
+  --color-navy-blue-200: hsl(210, 30%, 82%);
+  --color-navy-blue-300: hsl(210, 35%, 70%);
+  --color-navy-blue-400: hsl(210, 40%, 60%);
+  --color-navy-blue-500: hsl(210, 45%, 45%);
+  --color-navy-blue-600: hsl(210, 45%, 35%);
+  --color-navy-blue-700: hsl(210, 45%, 25%);
+  --color-navy-blue-800: hsl(210, 50%, 18%);
+  --color-navy-blue-900: hsl(210, 55%, 12%);
+  --color-navy-blue-950: hsl(210, 60%, 8%);
 
 }
