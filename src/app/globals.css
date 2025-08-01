@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-main: var(--font-roboto);
+  --font-inter: var(--font-inter-sans);
+  --font-nunito: var(--font-nunito-base);
+  --font-funnel: var(--font-funnel-sans);
+  --color-moch-50:  hsl(349, 100%, 96%);
+  --color-moch-100: hsl(349, 100%, 91%);
+  --color-moch-200: hsl(349, 100%, 84%);
+  --color-moch-300: hsl(349, 100%, 76%);
+  --color-moch-400: hsl(349, 100%, 72%);
+  --color-moch-500: hsl(349, 100%, 68%);
+  --color-moch-600: hsl(349, 100%, 60%);
+  --color-moch-700: hsl(349, 100%, 52%);
+  --color-moch-800: hsl(349, 100%, 44%);
+  --color-moch-900: hsl(349, 100%, 36%);
+  --color-moch-950: hsl(349, 100%, 28%);
+
+}
