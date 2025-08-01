@@ -5,7 +5,7 @@ export default function Home() {
   return (
       <div className="">
         This is a test
-        <Circle imageSrc={`${PROJECT_URL}/assets/img_icon.png`}/>
+        <Circle imageSrc={`${PROJECT_URL}/assets/img_icon.png`} text='Hola'/>
       </div>
   )
 }
