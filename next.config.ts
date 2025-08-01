@@ -5,7 +5,16 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     loader: "default",
-    domains: [`${process.env.NEXT_PUBLIC_BASE_URL}`, 'proto.sunnyserver.uk'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: process.env.NEXT_PUBLIC_BASE_URL?.replace(/^https?:\/\//, '') || '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'proto.sunnyserver.uk',
+      },
+    ],
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 86400,
     dangerouslyAllowSVG: true,
