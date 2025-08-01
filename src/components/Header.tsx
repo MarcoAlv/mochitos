@@ -8,8 +8,22 @@ const Header = () => {
     <header className="absolute top-0 left-0 w-full bg-white shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+          
           <div className="flex items-center space-x-3">
-            <span className="text-2xl font-bold text-moch-500">mochitos</span>
+            <Image
+              src='/assets/img_icon.png' 
+              width={150}
+              height={150}
+              alt='Mochitos'
+              className='h-13 w-auto object-contain'
+            />
+            <Image
+              src='/assets/text_icon.png' 
+              width={150}
+              height={150}
+              alt='Mochitos'
+              className='h-8 w-auto object-contain'
+            />
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
