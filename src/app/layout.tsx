@@ -41,7 +41,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         `}
       >
         <Header />
-        <main className={`flex-1 ${topPadding ? "pt-16" : ""}`}>
+        <main className={`flex-1 ${topPadding ? "pt-20" : ""}`}>
           {children}
         </main>
         <Footer />
