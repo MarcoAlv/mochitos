@@ -5,7 +5,10 @@ export default function Home() {
   return (
       <div className="">
         This is a test
-        <Circle imageSrc={`${PROJECT_URL}/assets/img_icon.png`} text='Hola'/>
+        <Circle imageSrc={`${PROJECT_URL}/assets/image.png`} className="hover:scale-110 transition-transform duration-200"/>
+        <Circle imageSrc={`${PROJECT_URL}/assets/image.png`} className="hover:scale-110 transition-transform duration-200"/>
+        <Circle imageSrc={`${PROJECT_URL}/assets/image.png`} className="hover:scale-110 transition-transform duration-200"/>
+        <Circle imageSrc={`${PROJECT_URL}/assets/image.png`} className="hover:scale-110 transition-transform duration-200"/>
       </div>
   )
 }
