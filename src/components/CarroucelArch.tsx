@@ -62,7 +62,7 @@ export default function CarrouselArch() {
     let pauseIndex = 0;
     const angleThreshold = 0.05;
 
-    function angleDistance(a, b) {
+    function angleDistance(a: number, b: number) {
       let diff = Math.abs(a - b) % (2 * Math.PI);
       return diff > Math.PI ? (2 * Math.PI - diff) : diff;
     }
