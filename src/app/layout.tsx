@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Roboto, Inter, Funnel_Sans, Nunito } from "next/font/google";
+import { Roboto, Inter, Funnel_Sans, Nunito, Inria_Serif } from "next/font/google";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -17,6 +17,12 @@ const inter = Inter({
 const funnelSans = Funnel_Sans({
   subsets: ["latin"],
   variable: "--font-funnel-sans",
+});
+
+const inriaSerif = Inria_Serif({
+  subsets: ["latin"],
+  weight: ['300', '400', '700'],
+  variable: "--font-inria-serif",
 });
 
 const nunito = Nunito({
@@ -35,13 +41,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body
         className={`
-          ${roboto.variable} ${inter.variable} ${funnelSans.variable} ${nunito.variable}
+          ${roboto.variable} ${inter.variable} ${funnelSans.variable}
+          ${nunito.variable} ${inriaSerif.variable}
           antialiased h-full font-inter min-h-screen flex flex-col
         dark:bg-navy-blue-850 dark:text-white
         `}
       >
         <Header />
-        <main className={`flex-1 ${topPadding ? "pt-20" : ""}`}>
+        <main className={`flex-1  ${topPadding ? "pt-20" : ""}`}>
           {children}
         </main>
         <Footer />

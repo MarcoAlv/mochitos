@@ -1,6 +1,6 @@
 "use client";
 import ArrowRightIcon from "./icons/arrow";
-import { useEffect, useId } from "react";
+import { forwardRef, useEffect, useId } from "react";
 
 type Props = {
   imageSrc: string;
@@ -9,16 +9,18 @@ type Props = {
   height?: number;
 };
 
-export default function Circle({
-  imageSrc,
-  className = "",
-  width = 150,
-  height = 150,
-}: Props) {
+function Circle(
+  { imageSrc, className = "", width = 150, height = 150 }: Props,
+  ref: React.Ref<HTMLDivElement>
+) {
   const patternId = useId();
 
   return (
-    <div style={{ width, height }} className={`relative hover:z-10 ${className}`}>
+    <div
+      ref={ref}
+      style={{ width, height }}
+      className={`${className} hover:z-10`}
+    >
       <svg
         viewBox="0 0 12024.11 12024.11"
         width={width}
@@ -41,7 +43,7 @@ export default function Circle({
               preserveAspectRatio="xMidYMid slice"
             />
           </pattern>
-          <style>{`.fil0 { fill: white; } .fil1 { fill: black; }`}</style>
+          <style>{`.fil0 { fill: white; } .fil1 { fill: black; } .dark .fil0 { fill: var(--color-navy-blue-100); } .dark .fil1 { fill: white; }`}</style>
         </defs>
 
         <g id="Layer_x0020_1">
@@ -71,11 +73,17 @@ export default function Circle({
             height: `calc(${height}px * 0.265)`,
             transform: `translate(calc(${width}px * -0.008), calc(${height}px * -0.017))`,
           }}
-          className="absolute bg-white rounded-full bottom-0 right-0 hover:bg-moch-500 flex items-center justify-center text-moch-500 hover:text-navy-blue-50"
+          className="absolute bg-white rounded-full bottom-0 right-0 hover:bg-moch-500 flex items-center justify-center text-moch-500 hover:text-navy-blue-50 dark:bg-navy-blue-100"
         >
           <ArrowRightIcon size={width / 4.5} className="" />
         </div>
+        <h3 className="font-inria-serif font-[700] text-center pt-2">
+          MochiFacts
+        </h3>
+        <p className="text-center">Funny, random, and sweets facts about us</p>
       </a>
     </div>
   );
 }
+
+export default forwardRef(Circle);
