@@ -33,10 +33,19 @@ export default function CarrouselArch() {
 
     let containerWidth = containerRef.current.offsetWidth;
     let containerHeight = containerRef.current.offsetHeight;
+    let offsety = containerHeight * 0.38;
+    let aviod_render = 0;
 
     const resizeObserver = new ResizeObserver(() => {
       containerWidth = containerRef.current?.offsetWidth || 800;
       containerHeight = containerRef.current?.offsetHeight || 800;
+      offsety = containerHeight * 0.38
+      
+      aviod_render = containerWidth > 1000 ? 1 : 0;
+
+      if (aviod_render === 1) {
+        requestAnimationFrame(render);
+      }
     });
     resizeObserver.observe(containerRef.current);
 
@@ -61,6 +70,12 @@ export default function CarrouselArch() {
       if (delta < 1000 / 75) {
         animationId = requestAnimationFrame(render);
         return;
+      }
+      
+      if (aviod_render >= 2) {
+        return;
+      } else if (aviod_render === 1) {
+        aviod_render = 2;
       }
 
       lastFrameTime = timestamp;
@@ -117,10 +132,10 @@ export default function CarrouselArch() {
       // Update transforms
       circles.forEach((circle, i) => {
         if (!circle) return;
-        const theta = angle + offsets[i];
+        const theta = angle + offsets[i] - 0.017;
         const x = containerWidth * 0.35 * Math.cos(theta);
         const y =
-          RADIUS * 1.15 * Math.sin(theta) * 0.5 + containerHeight * 0.34;
+          RADIUS * 1.15 * Math.sin(theta) * 0.5 + offsety;
         circle.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       });
 
