@@ -7,27 +7,32 @@ import "./globals.css";
 const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-roboto",
+  display: 'swap',
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter-sans",
+  display: 'swap',
 });
 
 const funnelSans = Funnel_Sans({
   subsets: ["latin"],
   variable: "--font-funnel-sans",
+  display: 'swap',
 });
 
 const inriaSerif = Inria_Serif({
   subsets: ["latin"],
   weight: ['300', '400', '700'],
   variable: "--font-inria-serif",
+  display: 'swap',
 });
 
 const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito-base",
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
