@@ -100,13 +100,13 @@ const MochitosHero = () => {
             <defs>
               <filter
                 id="whiteShader"
-                color-interpolation-filters="linearRGB"
+                colorInterpolationFilters="linearRGB"
                 filterUnits="objectBoundingBox"
                 primitiveUnits="userSpaceOnUse"
               >
                 <feFlood
-                  flood-color="#fafafa"
-                  flood-opacity="0.1"
+                  floodColor="#fafafa"
+                  floodOpacity="0.1"
                   x="0%"
                   y="0%"
                   width="100%"
