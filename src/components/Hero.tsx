@@ -61,13 +61,13 @@ const MochitosHero = () => {
       </button>
 
       <div className="h-full flex items-center">
-        <div className="w-full grid justify-center [@media(min-width:500px)_and_(max-width:1024px)]:justify-start lg:pr-[35dvw] items-center">
-          <div className="pl-16 [@media(min-width:500px)]:pl-24 pr-8 space-y-8">
+        <div className="w-full grid justify-start pl-[10dvw] items-center">
+          <div className=" space-y-8">
             <div className="space-y-1">
               <h2 className="text-2xl xs:text-2xl font-semibold text-zinc-800 tracking-wider">
                 WELCOME TO
               </h2>
-              <h1 className="text-5xl xs:text-6xl font-bold text-moch-500 leading-tight">
+              <h1 className="text-5xl xl:text-8xl xs:text-6xl font-bold text-moch-500 leading-tight">
                 MOCHITOS
               </h1>
             </div>
@@ -89,7 +89,7 @@ const MochitosHero = () => {
           </div>
         </div>
 
-        <div className="absolute right-0 -z-10 h-[34em] max-h-[35em] lg:right-[15dvw] 2xl:right-[25dvw] w-auto transition-all delay-75 duration-200 xl:transition-none">
+        <div className="absolute right-0 -z-10 h-[35dvh] sm:h-[60dvw] w-auto transition-all delay-75 duration-200 xl:transition-none">
           <svg
             width="100%"
             height="100%"
