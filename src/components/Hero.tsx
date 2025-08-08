@@ -157,12 +157,8 @@ const MochitosHero = () => {
             className="transition-colors"
           >
             <Heart
-              primary={`fill-moch-${
-                index === currentImageIndex ? "400" : "100"
-              }`}
-              secondary={`fill-moch-${
-                index === currentImageIndex ? "400" : "100"
-              }`}
+              primary={index === currentImageIndex ? "fill-moch-500" : "fill-moch-100"}
+              secondary={index === currentImageIndex ? "fill-moch-300" : "fill-moch-200"}
             />
           </button>
         ))}
