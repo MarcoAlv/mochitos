@@ -1,7 +1,6 @@
-// components/icons/TikTokIcon.tsx
 type TikTokIconProps = {
   size?: number;
-  className?: string; // maps from the `color` field
+  className?: string;
 };
 
 export default function TikTokIcon({ size = 22, className }: TikTokIconProps) {
