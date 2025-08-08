@@ -41,9 +41,10 @@ export default function CarrouselArch() {
       containerHeight = containerRef.current?.offsetHeight || 800;
       offsety = containerHeight * 0.38
       
+      let prev = aviod_render
       aviod_render = containerWidth > 1000 ? 1 : 0;
 
-      if (aviod_render === 1) {
+      if (prev === 2) {
         requestAnimationFrame(render);
       }
     });
@@ -153,7 +154,7 @@ export default function CarrouselArch() {
   return (
     <div
       ref={containerRef}
-      className="relative h-[34em] w-full overflow-hidden flex items-center justify-center"
+      className="relative h-[26em] [@media(min-width:1000px)]:h-[34em] w-full overflow-hidden flex items-center justify-center"
     >
       {elements.map((element, idx) => (
         <Circle

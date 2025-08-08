@@ -29,7 +29,7 @@ const Header = () => {
             />
           </div>
 
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lm:flex items-center space-x-8">
             <a 
               href="#about" 
               className="text-neutral-600 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 font-bold transition-colors duration-200"
@@ -56,7 +56,7 @@ const Header = () => {
             </a>
           </nav>
 
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden lm:flex items-center space-x-2">
             <p className='pr-1.5'><ThemeToggleButton /></p>
               
             <button className="px-4 py-2 text-moch-500 dark:text-moch-400 box-border border-2 border-moch-500 dark:border-moch-400 rounded-xl font-nunito font-extrabold hover:bg-moch-50 dark:hover:bg-moch-900/20 transition-colors duration-200">
@@ -67,7 +67,7 @@ const Header = () => {
             </button>
           </div>
 
-          <div className="md:hidden">
+          <div className="lm:hidden">
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-700 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 transition-colors duration-500"
@@ -89,7 +89,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={`md:hidden border-t border-navy-blue-200 dark:border-navy-blue-700 bg-white dark:bg-navy-blue-900 transition-[max-height,opacity] duration-500 ease-in-out ${
+      <div className={`lm:hidden border-t border-navy-blue-200 dark:border-navy-blue-700 bg-white dark:bg-navy-blue-900 transition-[max-height,opacity] duration-500 ease-in-out ${
         isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
       }`}>
         <nav className="px-4 py-3 space-y-2">

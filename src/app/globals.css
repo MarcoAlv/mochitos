@@ -12,6 +12,7 @@
   --font-inria-serif: var(--font-inria-serif);
 
   --breakpoint-xs: 25rem;
+  --breakpoint-lm: 824px;
 
   --color-moch-50:  hsl(349, 100%, 96%);
   --color-moch-100: hsl(349, 100%, 91%);
