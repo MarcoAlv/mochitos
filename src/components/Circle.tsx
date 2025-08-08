@@ -1,6 +1,6 @@
 "use client";
 import ArrowRightIcon from "./icons/arrow";
-import { forwardRef, useEffect, useId } from "react";
+import { forwardRef, useId } from "react";
 
 type Props = {
   imageSrc: string;
