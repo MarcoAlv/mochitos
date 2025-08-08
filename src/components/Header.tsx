@@ -22,10 +22,10 @@ const Header = () => {
             />
             <Image
               src={`${PROJECT_URL}/assets/text_icon.png`}
-              width={150}
-              height={150}
+              width={100}
+              height={28}
               alt='Mochitos'
-              className='h-8 w-auto object-contain'
+              className='w-auto object-contain'
             />
           </div>
 
