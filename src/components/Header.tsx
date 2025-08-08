@@ -8,9 +8,9 @@ import Image from 'next/image';
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
-    <header className="absolute top-0 left-0 w-full bg-white dark:bg-navy-blue-900 shadow-sm dark:shadow-navy-blue-800 z-50">
+    <header className="fixed top-0 left-0 right-0 w-full bg-white dark:bg-navy-blue-900 shadow-sm dark:shadow-navy-blue-800 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           
           <div className="flex items-center space-x-3">
             <Image
@@ -32,25 +32,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <a 
               href="#about" 
-              className="text-gray-700 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 font-medium transition-colors duration-200"
+              className="text-neutral-600 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 font-bold transition-colors duration-200"
             >
               About Us
             </a>
             <a 
               href="#dates" 
-              className="text-gray-700 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 font-medium transition-colors duration-200"
+              className="text-neutral-600 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 font-bold transition-colors duration-200"
             >
               Dates
             </a>
             <a 
               href="#gallery" 
-              className="text-gray-700 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 font-medium transition-colors duration-200"
+              className="text-neutral-600 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 font-bold transition-colors duration-200"
             >
               Gallery
             </a>
             <a 
               href="#more" 
-              className="text-gray-700 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 font-medium transition-colors duration-200"
+              className="text-neutral-600 dark:text-navy-blue-100 hover:text-moch-500 dark:hover:text-moch-400 font-bold transition-colors duration-200"
             >
               More
             </a>
@@ -59,10 +59,10 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-2">
             <p className='pr-1.5'><ThemeToggleButton /></p>
               
-            <button className="px-4 py-2 text-moch-500 dark:text-moch-400 border-2 border-moch-500 dark:border-moch-400 rounded-lg font-nunito font-medium hover:bg-moch-50 dark:hover:bg-moch-900/20 transition-colors duration-200">
+            <button className="px-4 py-2 text-moch-500 dark:text-moch-400 box-border border-2 border-moch-500 dark:border-moch-400 rounded-xl font-nunito font-extrabold hover:bg-moch-50 dark:hover:bg-moch-900/20 transition-colors duration-200">
               Log in
             </button>
-            <button className="px-4 py-2 bg-moch-500 dark:bg-moch-600 text-white rounded-lg font-nunito font-bold hover:bg-moch-600 dark:hover:bg-moch-500 transition-colors duration-200">
+            <button className="px-4 py-2 bg-moch-500 dark:bg-moch-600 text-white box-border border-2 border-transparent rounded-xl font-nunito font-extrabold hover:bg-moch-600 dark:hover:bg-moch-500 transition-colors duration-200">
               Sign up
             </button>
           </div>
@@ -89,7 +89,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={`md:hidden border-t border-navy-blue-200 dark:border-navy-blue-700 bg-white dark:bg-navy-blue-900 transition-all duration-500 ease-in-out ${
+      <div className={`md:hidden border-t border-navy-blue-200 dark:border-navy-blue-700 bg-white dark:bg-navy-blue-900 transition-[max-height,opacity] duration-500 ease-in-out ${
         isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
       }`}>
         <nav className="px-4 py-3 space-y-2">
